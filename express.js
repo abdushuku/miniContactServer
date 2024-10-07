@@ -11,10 +11,6 @@ const session = require("express-session")
 const app = express()
 
 app.use(cors({
-    origin: [
-      'http://localhost:8080',
-      'https://minivcontact.netlify.app'
-    ],
     credentials: true,
     exposedHeaders: ['set-cookie']
 }));
